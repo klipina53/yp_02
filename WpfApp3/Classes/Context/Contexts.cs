@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using yp02.Classes;
 
-namespace Master_Pol.Classes.Context
+namespace yp02.Classes.Context
 {
     public class Contexts : DbContext
     {
-        public static readonly string StrConnect = "server=localhost;port=3303;uid=root;database=base2;";
+        public static readonly string StrConnect = "server=127.0.0.1;port=3306;uid=root;database=base2;pwd=;";
         public static MySqlServerVersion mySqlServerVersion = new MySqlServerVersion(new System.Version(8, 0, 11));
 
         public DbSet<Materials> Materials { get; set; }

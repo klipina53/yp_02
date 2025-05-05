@@ -27,10 +27,13 @@ namespace yp02.Pages.Partner
         public ItemHistory(Partner_Products partner_Products)
         {
             InitializeComponent();
-            product.Content = Contexts.Products.ToList().Find(x => x.id == partner_Products.product).name;
-            partner.Content = Contexts.Partners.ToList().Find(x => x.id == partner_Products.partner).nameCompany;
+            var productItem = Contexts.Products.ToList().FirstOrDefault(x => x.id == partner_Products.product);
+            product.Content = productItem != null ? productItem.name : "Product Not Found";
+            var partnerItem = Contexts.Partners.ToList().FirstOrDefault(x => x.id == partner_Products.partner);
+            partner.Content = partnerItem != null ? partnerItem.nameCompany : "Partner Not Found";
             countProduct.Content += partner_Products.countProduct.ToString();
             dateSell.Content += partner_Products.dateSell.ToString("dd.MM.yyyy");
+
         }
     }
 }

@@ -61,7 +61,7 @@ namespace yp02.Pages.Partner
         {
             Regex regexFIO = new Regex(@"^([А-ЯA-Z]|[А-ЯA-Z][\x27а-яa-z]{1,}|[А-ЯA-Z][\x27а-яa-z]{1,}\-([А-ЯA-Z][\x27а-яa-z]{1,}|(оглы)|(кызы)))\040[А-ЯA-Z][\x27а-яa-z]{1,}(\040[А-ЯA-Z][\x27а-яa-z]{1,})?$");
             Regex regexTelephone = new Regex(@"^(?![01234569])((\+7|8)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$");
-            Regex regexINN = new Regex(@"^[0-9]{1,10}$");
+            Regex regexINN = new Regex(@"^[0-9]{1,12}$");
             Regex regexRating = new Regex(@"^[0-9]{1,10}$");
             Regex regexEmail = new Regex(@"([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)");
             if (String.IsNullOrEmpty(nameCompany.Text))

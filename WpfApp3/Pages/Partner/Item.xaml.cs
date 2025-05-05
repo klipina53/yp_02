@@ -38,15 +38,30 @@ namespace yp02.Pages.Partner
 
         public Int64 GetDiscount(Int64 id)
         {
-            var discount = Contexts.GetChanges.FromSqlRaw("CALL GetChanges({0})", id).ToList();
+            try
+            {
+                var discount = Contexts.GetChanges.FromSqlRaw("CALL GetChanges({0})", id).ToList();
+                double totalProducts = discount.Sum(x => x.countProduct);
 
-            double totalProducts = discount.Sum(x => x.countProduct);
+                Console.WriteLine($"Total Products Count: {totalProducts}"); // Логируем сумму продуктов
 
-            if (totalProducts < 10000) return 0;
-            else if (totalProducts >= 10000 && totalProducts < 50000) return 5;
-            else if (totalProducts >= 50000 && totalProducts < 300000) return 10;
-            else return 15;
+                if (totalProducts < 10000)
+                    return 0;
+                else if (totalProducts >= 10000 && totalProducts < 50000)
+                    return 5;
+                else if (totalProducts >= 50000 && totalProducts < 300000)
+                    return 10;
+                else
+                    return 15;
+            }
+            catch (Exception ex)
+            {
+                // Обработка исключений
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                return 0; // Возврат значения в случае ошибки
+            }
         }
+
 
         private void updatePartner(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
