@@ -1,0 +1,23 @@
+﻿<Page x:Class="yp02.Pages.Partner.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:yp02.Pages.Partner"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Main">
+
+    <Grid Background="#67BA80">
+        <Grid Background="#F4E8D3" Height="85" VerticalAlignment="Top">
+            <Image Source="/Images/logo.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
+        </Grid>
+        <Label Content="Поставщики" FontFamily="Segoe UI" Margin="0,25,0,0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="20,90,20,40">
+            <ScrollViewer Background="#F4e8d3">
+                <StackPanel x:Name="parent"/>
+            </ScrollViewer>
+        </Border>
+        <Button Click="addOrChange" Height="24" Width="150" Background="#f4e8d3" Margin="0,0,20,10" Content="Добавить" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+    </Grid>
+</Page>
