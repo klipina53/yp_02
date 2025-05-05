@@ -9,8 +9,8 @@
       Title="Main">
 
     <Grid Background="#67BA80">
-        <Grid Background="#F4E8D3" Height="85" VerticalAlignment="Top">
-            <Image Source="/Images/logo.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
+        <Grid Background="#F4E8D3" Height="75" VerticalAlignment="Top" Margin="20,10,20,0">
+            <Image Source="/logo.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
         </Grid>
         <Label Content="Поставщики" FontFamily="Segoe UI" Margin="0,25,0,0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <Border BorderBrush="Black" BorderThickness="1" Margin="20,90,20,40">

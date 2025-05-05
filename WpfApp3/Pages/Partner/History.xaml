@@ -9,9 +9,9 @@
       Title="History">
 
     <Grid Background="#67BA80">
-        <Grid Background="#F4E8D3" Height="85" VerticalAlignment="Top" >
+        <Grid Background="#F4E8D3" Height="75" VerticalAlignment="Top" Margin="20,10,20,0" >
             <Label Content="История реализации продукции" FontFamily="Segoe UI" Margin="0,25,0,0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-            <Image Source="/Images/logo.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
+            <Image Source="/logo.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0"/>
         </Grid>
         <Border BorderBrush="Black" BorderThickness="1" Margin="20,90,20,40">
             <ScrollViewer Background="#F4E8D3 ">

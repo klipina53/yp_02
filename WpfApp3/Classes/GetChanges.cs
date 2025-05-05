@@ -8,7 +8,6 @@ namespace yp02.Classes
 {
     public class GetChanges
     {     
-        public int id {  get; set; }
         public string name
         {
             get; set;

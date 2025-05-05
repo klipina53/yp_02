@@ -12,6 +12,6 @@ namespace yp02.Classes
         public Int64 typeProduct {  get; set; }
         public string articleNumber { get; set; }
         public string name { get; set; }
-        public string priceMin { get; set; }
+        public double priceMin { get; set; }
     }
 }

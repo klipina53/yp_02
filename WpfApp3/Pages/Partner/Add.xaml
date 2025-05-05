@@ -5,8 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:yp02.Pages.Partner"
       mc:Ignorable="d" 
-      d:DesignHeight="870" d:DesignWidth="570" MinHeight="870" MinWidth="570" 
-      Title="Add">
+ d:DesignHeight="870" d:DesignWidth="570"      Title="Add">
 
     <Grid Background="#F4E8D3">
         <Border Margin="10,10,10,10" BorderBrush="Black" BorderThickness="1" Background="White">
@@ -38,5 +37,6 @@
                 </ScrollViewer>
             </Grid>
         </Border>
+        <Image Source="/logo.png" Margin="0,753,459,0" Height="122" VerticalAlignment="Top" HorizontalAlignment="Right" Width="101"/>
     </Grid>
 </Page>
